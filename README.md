@@ -5,6 +5,12 @@ The application allows users to define PDF templates dynamically and generate pr
 
 ---
 
+## Live Demo
+
+https://magnificent-kitsune-414bbc.netlify.app
+
+---
+
 ## Features
 
 - Create multiple PDF templates:
