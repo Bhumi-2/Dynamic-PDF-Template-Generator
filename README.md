@@ -36,7 +36,7 @@ The application allows users to define PDF templates dynamically and generate pr
 
 ---
 
-## ▶️ How to Run the Project
+## How to Run the Project
 
 ```bash
 npm install
