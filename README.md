@@ -1,16 +1,115 @@
-# React + Vite
+# Dynamic PDF Template Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project implements a **Dynamic PDF Template Generation module** as part of the hiring assignment.  
+The application allows users to define PDF templates dynamically and generate professional-looking PDFs using mapped JSON data.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Create multiple PDF templates:
+  - **Salary Template**
+  - **Bill Template**
+  - **Generic Template**
+- Define structured sections:
+  - Header
+  - Body
+  - Footer
+- JSON path-based data mapping (e.g. `user.payDetail.total_salary_amount`)
+- Default fallback values for missing data
+- Field-level alignment:
+  - Left
+  - Center
+  - Right
+- Clean and professional PDF output using **jsPDF**
+- Fully client-side (no backend required)
+- Dummy JSON data used (as explicitly permitted in the assignment)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (Vite)
+- **JavaScript (ES6)**
+- **jsPDF**
+- **Custom CSS (UI-focused, no UI libraries)**
+
+---
+
+## ▶️ How to Run the Project
+
+```bash
+npm install
+npm run dev
+```
+
+Then open your browser at:
+```
+http://localhost:5173
+```
+
+---
+
+## How It Works
+
+### Salary Template
+- Selecting a **Salary Template** displays a dropdown of users.
+- Selecting a user and clicking **Generate PDF** creates a salary slip-style PDF using mapped JSON data.
+
+### Bill Template
+- Selecting a **Bill Template** requires **no additional input**.
+- Clicking **Generate PDF** directly generates the bill PDF using predefined bill data.
+
+### Generic Template
+- Demonstrates flexibility for other document types.
+- Uses sample JSON data for demonstration.
+
+---
+
+## Dummy Data Usage
+
+Dummy JSON data is used to simulate backend responses:
+- Salary user data
+- Bill invoice data
+
+This approach aligns with the assignment instructions and demonstrates how the template engine can easily be connected to real APIs or databases in a production environment.
+
+---
+
+## Project Structure (Key Files)
+
+```
+src/
+ ├── App.jsx        # Main application logic
+ ├── App.css        # UI styling
+ └── main.jsx
+```
+
+---
+
+## Sample Output
+
+Sample PDFs are generated directly from the application to demonstrate:
+- Template structure
+- JSON data mapping
+- Alignment handling
+- Visual formatting
+
+---
+
+## Author
+
+**Bhumika Khatwani**
+
+---
+
+## Assignment Compliance Summary
+
+✔ Dynamic template creation  
+✔ Salary template with user selection  
+✔ Bill template with direct PDF generation  
+✔ JSON mapping & alignment support  
+✔ Dummy data used as allowed  
+✔ Clean UI and readable PDFs  
+
+---
