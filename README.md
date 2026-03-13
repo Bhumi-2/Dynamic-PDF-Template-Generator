@@ -86,8 +86,8 @@ This approach aligns with the assignment instructions and demonstrates how the t
 
 ```
 src/
- ├── App.jsx        # Main application logic
- ├── App.css        # UI styling
+ ├── App.jsx        
+ ├── App.css        
  └── main.jsx
 ```
 
